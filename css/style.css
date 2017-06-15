@@ -1,0 +1,256 @@
+body {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+header {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 25px;
+    height: 400px;
+}
+
+h1, h2, h3 {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 8rem;
+}
+
+p {
+    line-height: 1.43;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.sub-heading {
+    font-size: 2.5rem;
+    width: 50%;
+}
+
+.get-yours-link {
+    display: inline-block;
+    padding: 5px;
+    background-color: #814236;
+    color: white;
+    border: 1px solid #391D18;
+}
+
+.get-yours-link:hover {
+    color: white;
+}
+
+.get-yours-link-mobile {
+    display: none;
+}
+
+.fa-shopping-cart {
+    margin-right: 3px;
+}
+
+/*features section*/
+.features-section {
+    padding: 15px 0px;
+    background-color: #F8F8F8;
+}
+
+.section-title {
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.feature {
+    height: 285px;
+    background-color: white;
+    text-align: center;
+    padding: 15px 10px 10px 10px;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.feature svg {
+    fill: #814236;
+    height: 50px;
+}
+
+/*uses-section*/
+.uses-section {
+    padding: 15px 0px;
+    background-color: #EBEBEB;
+}
+
+.uses-section .feature {
+    height: 300px;
+    padding: 0px;
+}
+
+.feature-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+.feature-note .feature-bg {
+    background-image: url("../img/note-taking.jpg");
+}
+
+.feature-art .feature-bg {
+    background-image: url("../img/art.jpg");
+}
+
+.feature-drafting .feature-bg {
+    background-image: url("../img/drafting.jpg");
+}
+
+.feature-coloring .feature-bg {
+    background-image: url("../img/coloring.jpg");
+}
+
+.text-style {
+    text-align: left;
+    padding: 15px;
+}
+
+/*testimonials section*/
+.t-section {
+    padding: 15px 0px;
+    background-color: #F8F8F8;
+}
+
+.t-feature {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.profile-pic-style {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#pic1 {
+    background-image: url("https://www.gravatar.com/avatar/0e58cf2f03c9a0a5d6965154837cd595");
+}
+
+#pic2 {
+    background-image: url("https://www.gravatar.com/avatar/71900224a10dd5cb3f230f9f64eeaf43");
+}
+
+.profile-content {
+    padding-left: 120px;
+}
+
+.profile-content h3 small {
+    font-size: 0.8em;
+    color: #999999;
+}
+
+/*footer*/
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: #391D18;
+    color: #EEEEEE;
+}
+
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+.top-line {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.top-line p {
+    display: inline;
+}
+
+.icons {
+    float: right;
+}
+
+.icons a {
+    padding-left: 20px;
+}
+
+/*responsive web design*/
+@media (max-width: 992px) {
+    header {
+        background-image: linear-gradient(to bottom, #391D18, #814236);
+        color: white;
+        padding: 25px;
+        height: auto;
+    }
+
+    .get-yours-link {
+        display: none;
+    }
+
+    .get-yours-link-mobile {
+        display: block;
+        color: white;
+        font-size: 24px;
+        float: right;
+    }
+
+    .sub-heading {
+        width: auto;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature {
+        text-align: left;
+        height: auto;
+    }
+
+    .feature svg {
+        float: left;
+    }
+
+    .feature-copy {
+        padding-left: 60px;
+    }
+
+    .top-line p {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .icons {
+        float: none;
+    }
+
+    .icons a {
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    
+    .uses-section .feature {
+        height: auto;
+    }
+}
+
